@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<title>헬퍼</title>
+	<style>
+		.won{animation: ro 3s infinite linear;left: 300px;display: block;position: absolute;z-index: 1; }	
+		.wrap{width: 800px; margin:auto;}
+		section{height: 650px}
+		.section1{background: red;}  
+		.section2{background: red;}
+		.section3{background: red;}
+		.king{display: block;position: absolute; left: 100px; z-index: 1;transition:all 1s; animation: ro 4s infinite cubic-bezier(.11,.53,1,-0.07) alternate;left: 0px;}
+
+		@keyframes ro{
+			to{transform: rotate3d(0.5,1,1,360deg); }
+		}
+		.bike{display: block; position: absolute; left: 1000px; transition:all 4s; animation: lo 2s infinite cubic-bezier(.11,.53,1,-0.07) alternate;left: 0px;}
+		.fire{display: block;position: absolute; left: 1400px;}
+		.fire2{display: block;position: absolute; left: 200px;}
+		@keyframes lo{
+			to{transform: rotate(15deg); left: 1600px;}
+		}
+		.face:hover{ opacity: 0.5; z-index: 1; transform:rotate(300deg); left: 770px; }
+		.text{ right: 1300px;display: block;position: absolute; }
+		.text2{ left: 1300px;display: block;position: absolute;z-index: -1; }
+		.Q:hover{ left: 770px;display: block;position: absolute;z-index: 0;opacity: 0.5; }
+		.death{display: block;position: absolute; display: block;position: absolute; right: 0px; z-index: 1;transition:all 1s; animation: ro 4s infinite cubic-bezier(.0,.0,1,-0.07) alternate;right: 0px;}
+		.gea:hover{ left: 830px;display: block;position: absolute;z-index: 0;animation: ro 15s infinite linear; }
+		
+    </style>
+    <div class="wrap">
+   	 	<section class="section1">
+   	 		<img src="text.png" class="text">
+   	 		<img src="Q.png" class="Q">
+   	 		<img src="death.png" class="death">  	 		
+   	 	</section>
+		<section class="section2">
+			<img src="bike.png" class="bike">
+			<img src="fire.png" class="fire">
+			<img src="fire2.png" class="fire2">
+			<img src="gea.png" class="gea">			
+		</section>
+    	<section class="section3">
+    		<img src="fire.png" class="fire">
+    		<img src="fire2.png" class="fire2">
+    		<img src="finger.png" class="won">
+    		<img src="text2.png" class="text2">
+			<img src="face.png" class="face">   		
+    	</section>
+    </div>
+</body>
+</head>
+</html>
